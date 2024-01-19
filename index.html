@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Asignacion 1</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <a href="#separator2">Quién Soy?</a>
+      <a href="#separator3">Hobbies</a>
+      <a href="#separator4">Series/Peliculas Favoritas</a>
+      <a href="#separator5">Contacto</a>
+    </nav>
+  </header>
+  <main>
+    <article id="separator1">
+      <img
+        src="https://media.licdn.com/dms/image/D4E03AQFqOziWTgRDPA/profile-displayphoto-shrink_200_200/0/1698795070044?e=2147483647&v=beta&t=1nfT714OZrY0Q-SpoImVPKu9HOI8GeruW4dsCRzH-Ug"
+        alt="photo venegas_jimenez_jesusa133643" />
+    </article>
+    <article id="separator2">
+      <hr>
+      <h1>Quién Soy?</h1>
+      <span><strong>Nombre:</strong> Jesus Adolfo Venegas Jimenez</span>
+      <span><strong>ID:</strong> 00000133643</span>
+      <br>
+      <span><strong>Edad:</strong> 28 años</span>
+      <br>
+      <span><strong>Ocupación:</strong> Estudiante/Empleado</span>
+      <br>
+      <span><strong>Empresa:</strong> Restaurantly</span>
+      <p><strong>Acerca de mi:</strong> Una persona curiosa de la música así como sus representantes en el canto y toque
+        de instrumentos de cuerda, interesado en el desarrollo web, más que nada recargado hacia el Front-End,
+        trabajador de una agencia de diseño desde ya hace 3 años como diseñador web.</p>
+      <hr>
+    </article>
+    <article id="separator3">
+      <h1>Hobbies</h1>
+      <ul>
+        <li>Cantar</li>
+        <li>Tocar guitarra</li>
+        <li>Escribir</li>
+        <li>Practicar diseño web</li>
+        <li>Recolectar conchas de mar</li>
+      </ul>
+      <hr>
+    </article>
+    <article id="separator4">
+      <h2>Series/Películas Favoritas</h2>
+      <ul>
+        <li>
+          Series
+          <ul>
+            <li>One Piece</li>
+            <li>The Office</li>
+            <li>Naruto</li>
+            <li>Boku No Hero</li>
+            <li>Malcolm</li>
+            <li>Los Simpson</li>
+            <li>Brooklyn 99</li>
+            <li>Mr. Robot</li>
+            <li>The Umbrella Academy</li>
+          </ul>
+        </li>
+        <li>
+          Peliculas
+          <ul>
+            <li>Nacho Libre</li>
+            <li>Harry Potter - Saga completa</li>
+            <li>Hobbit - Saga completa</li>
+            <li>El Señor de los anillos - Saga completa</li>
+            <li>Wiplash</li>
+          </ul>
+        </li>
+      </ul>
+      <hr>
+    </article>
+    <article id="separator5">
+      <h1>Contacto</h1>
+      <span>Telefono: <a href="tel:6442751120">(644) 275-1120</a></span>
+      <br>
+      <span>Correo propio: <a
+          href="mailto:jesusa.venegas@potros.itson.edu.mx">jesusa.venegas@potros.itson.edu.mx</a></span>
+      <br>
+      <span>Correo empresarial: <a href="mailto:adolfo.restaurantly@gmail.com">adolfo.restaurantly@gmail.com</a></span>
+      <hr>
+    </article>
+  </main>
+  <footer>
+    <span>&copy; JesusA Venegas <em class="year"></em></span>
+  </footer>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js?version=1.1"></script>
+<script>
+  $(document).ready(function () {
+    $(".year").each((function () {
+      var x = (new Date).getFullYear();
+      $(this).text(x)
+    }
+    ));
+  });
+</script>
+
+</html>
